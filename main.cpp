@@ -26,4 +26,15 @@ int main() {
 
 	gui::gui_main();
 
+	global_data::is_exti = true;
+	thread_data::global_mutex_condition.notify_one();
+
+	{
+		std::unique_lock<std::mutex> lock(thread_data::main_mutex);
+		thread_data::main_condition.wait(lock);
+	}
+
+	std::this_thread::sleep_for(std::chrono::milliseconds(10));
+
+	return 0;
 }
