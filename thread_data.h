@@ -1,6 +1,7 @@
 #pragma once
 #include <thread>
 #include <mutex>
+#include <atomic>
 
 namespace thread_data {
 
@@ -42,7 +43,10 @@ namespace thread_data {
 	* @brief 数据处理总线程数量
 	*/
 	inline constexpr int32_t data_processing_thread = 2;
-
+	/*
+	* @brief 全局工作线程数量
+	*/
+	inline std::atomic<int32_t> work_completed_thread = 0;
 
 	/*
 	* @brief 数据处理锁
@@ -68,4 +72,12 @@ namespace thread_data {
 	* @brief 全局条件变量
 	*/
 	inline std::condition_variable global_mutex_condition;
+	/*
+	* @brief 全局锁
+	*/
+	inline std::mutex main_mutex;
+    /*
+	* @brief 全局条件变量
+	*/
+	inline std::condition_variable main_condition;
 }

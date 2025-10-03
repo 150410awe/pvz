@@ -13,14 +13,15 @@ namespace zombie_rendering {
 
 
 
-		while (true) {
+		while (global_data::is_exti == false) {
 
 			{
 				std::unique_lock<std::mutex> lock(thread_data::rendering);
 				global_data::zombie_rendering_prepare = true;
 				thread_data::rendering_condition.wait(lock);
 				global_data::zombie_rendering_prepare = false;
-				std::this_thread::sleep_for(std::chrono::milliseconds(2));
+
+
 			}
 
 
@@ -53,8 +54,18 @@ namespace zombie_rendering {
 			//std::unique_lock<std::mutex> lock(thread_data::);
 			std::cout << "zombie_rendering" << std::endl;
 
+
+
 			thread_management::rendering_synchronization();
+
+
+			if (global_data::is_exti == true)
+				break;
 		}
+
+
+
+		thread_data::work_completed_thread++;
 	}
 
 }

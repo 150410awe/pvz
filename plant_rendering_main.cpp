@@ -15,14 +15,15 @@ namespace plant_rendering {
 
 
 
-		while (true) {
+		while (global_data::is_exti == false) {
 
 			{
 				std::unique_lock<std::mutex> lock(thread_data::rendering);
 				global_data::plant_rendering_prepare = true;
 				thread_data::rendering_condition.wait(lock);
 				global_data::plant_rendering_prepare = false;
-				std::this_thread::sleep_for(std::chrono::milliseconds(2));
+
+
 			}
 
 
@@ -65,8 +66,17 @@ namespace plant_rendering {
 			//std::unique_lock<std::mutex> lock(thread_data::);
 			std::cout << "plant rendering" << std::endl;
 
+
+
+
 			thread_management::rendering_synchronization();
+
+			if (global_data::is_exti == true)
+				break;
 		}
+
+
+		thread_data::work_completed_thread++;
 	}
 
 }
