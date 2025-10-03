@@ -12,12 +12,14 @@ namespace management {
 		global_data::data_processing_run = true;
 		global_data::management_prepare = false;
 
-		while (true) {
+		while (global_data::is_exti == false) {
 			
 			if (global_data::is_games == false) {
 				std::unique_lock<std::mutex> lock(thread_data::global_mutex);
 				thread_data::global_mutex_condition.wait(lock);
 			}
+
+
 
 			//if (global_data::data_processing_run == true) 
 			{
@@ -55,5 +57,10 @@ namespace management {
 				global_data::data_processing_run = true;
 			}
 		}
+
+		while (thread_data::work_completed_thread != thread_data::data_processing_thread + thread_data::rendering_thread)
+			std::this_thread::sleep_for(std::chrono::milliseconds(1));
+
+		thread_data::main_condition.notify_one();
 	}
 }

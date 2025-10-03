@@ -21,4 +21,6 @@ namespace global_data {
 
     inline bool is_menu = true;
     inline bool is_battlefield = false;
+
+    inline bool is_exti = false;
 }
