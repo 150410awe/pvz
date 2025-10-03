@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{af5f5bc8-0743-4ad2-ab6a-9abb306691e2}</ProjectGuid>
+    <RootNamespace>pvz</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdclatest</LanguageStandard_C>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="bullet_resources_management.cpp" />
+    <ClCompile Include="command.cpp" />
+    <ClCompile Include="coordinates.cpp" />
+    <ClCompile Include="data\bullet\bullet.cpp" />
+    <ClCompile Include="data\bullet\bullet_resources.cpp" />
+    <ClCompile Include="data\environment\environment.cpp" />
+    <ClCompile Include="data\plant\plant.cpp" />
+    <ClCompile Include="data\plant\plant_resources.cpp" />
+    <ClCompile Include="data\zombie\zombie.cpp" />
+    <ClCompile Include="data\zombie\zombie_resources.cpp" />
+    <ClCompile Include="data_type\bullet\null_bullet.cpp" />
+    <ClCompile Include="data_type\bullet\pea_bullet.cpp" />
+    <ClCompile Include="data_type\plant\null_plant.cpp" />
+    <ClCompile Include="data_type\plant\pea_shooter.cpp" />
+    <ClCompile Include="data_type\zombie\null_zombie.cpp" />
+    <ClCompile Include="data_type\zombie\ordinary_zombie.cpp" />
+    <ClCompile Include="environment_management.cpp" />
+    <ClCompile Include="global_data.cpp" />
+    <ClCompile Include="gui_main.cpp" />
+    <ClCompile Include="IO_operations_management.cpp" />
+    <ClCompile Include="lawn.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="management_main.cpp" />
+    <ClCompile Include="music.cpp" />
+    <ClCompile Include="music_data.cpp" />
+    <ClCompile Include="picture.cpp" />
+    <ClCompile Include="plant_data.cpp" />
+    <ClCompile Include="plant_data_main.cpp" />
+    <ClCompile Include="plant_rendering_main.cpp" />
+    <ClCompile Include="plant_resources_management.cpp" />
+    <ClCompile Include="thread_data.cpp" />
+    <ClCompile Include="thread_management.cpp" />
+    <ClCompile Include="zombie_data.cpp" />
+    <ClCompile Include="zombie_data_main.cpp" />
+    <ClCompile Include="zombie_rendering_main.cpp" />
+    <ClCompile Include="zombie_resources_management.cpp" />
+    <ClCompile Include="bullet_data.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="bullet_data.h" />
+    <ClInclude Include="bullet_resources_management.h" />
+    <ClInclude Include="command.h" />
+    <ClInclude Include="coordinates.h" />
+    <ClInclude Include="database\bullet\null_bullet.h" />
+    <ClInclude Include="database\bullet\pea_bullet.h" />
+    <ClInclude Include="database\plant\null_plant.h" />
+    <ClInclude Include="database\plant\pea_shooter.h" />
+    <ClInclude Include="database\zombie\null_zombie.h" />
+    <ClInclude Include="database\zombie\ordinary_zombie.h" />
+    <ClInclude Include="data\bullet\bullet.h" />
+    <ClInclude Include="data\bullet\bullet_id.h" />
+    <ClInclude Include="data\bullet\bullet_resources.h" />
+    <ClInclude Include="data\bullet\bullet_state.h" />
+    <ClInclude Include="data\environment\environment_data.h" />
+    <ClInclude Include="data\plant\plant.h" />
+    <ClInclude Include="data\plant\plant_id.h" />
+    <ClInclude Include="data\plant\plant_resources.h" />
+    <ClInclude Include="data\plant\plant_state.h" />
+    <ClInclude Include="data\zombie\zombie.h" />
+    <ClInclude Include="data\zombie\zombie_id.h" />
+    <ClInclude Include="data\zombie\zombie_resources.h" />
+    <ClInclude Include="data\zombie\zombie_state.h" />
+    <ClInclude Include="data_type\bullet\null_bullet.h" />
+    <ClInclude Include="data_type\bullet\pea_bullet.h" />
+    <ClInclude Include="data_type\plant\null_plant.h" />
+    <ClInclude Include="data_type\plant\pea_shooter.h" />
+    <ClInclude Include="data_type\zombie\null_zombie.h" />
+    <ClInclude Include="data_type\zombie\ordinary_zombie.h" />
+    <ClInclude Include="environment.h" />
+    <ClInclude Include="environment_management.h" />
+    <ClInclude Include="file_data.h" />
+    <ClInclude Include="general_purpose_func.h" />
+    <ClInclude Include="global_data.h" />
+    <ClInclude Include="gui_command.h" />
+    <ClInclude Include="gui_main.h" />
+    <ClInclude Include="IO_operations_data.h" />
+    <ClInclude Include="IO_operations_management.h" />
+    <ClInclude Include="lawn.h" />
+    <ClInclude Include="management_command.h" />
+    <ClInclude Include="management_main.h" />
+    <ClInclude Include="music.h" />
+    <ClInclude Include="music_data.h" />
+    <ClInclude Include="picture.h" />
+    <ClInclude Include="plant_data.h" />
+    <ClInclude Include="plant_data_main.h" />
+    <ClInclude Include="plant_data_processing_command.h" />
+    <ClInclude Include="plant_rendering_command.h" />
+    <ClInclude Include="plant_rendering_main.h" />
+    <ClInclude Include="plant_resources_management.h" />
+    <ClInclude Include="resources_data\bullet\null_bullet.h" />
+    <ClInclude Include="resources_data\bullet\pea_bullet.h" />
+    <ClInclude Include="resources_data\bullet_set.h" />
+    <ClInclude Include="resources_data\environment_set.h" />
+    <ClInclude Include="resources_data\plant\null_plant.h" />
+    <ClInclude Include="resources_data\plant\pea_shooter.h" />
+    <ClInclude Include="resources_data\plant_set.h" />
+    <ClInclude Include="resources_data\zombie\null_zombie.h" />
+    <ClInclude Include="resources_data\zombie\ordinary_zombie.h" />
+    <ClInclude Include="resources_data\zombie_set.h" />
+    <ClInclude Include="thread_data.h" />
+    <ClInclude Include="thread_management.h" />
+    <ClInclude Include="zombie_data.h" />
+    <ClInclude Include="zombie_data_processing_command.h" />
+    <ClInclude Include="zombie_data_main.h" />
+    <ClInclude Include="zombie_rendering_command.h" />
+    <ClInclude Include="zombie_rendering_main.h" />
+    <ClInclude Include="zombie_resources_management.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,543 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="源文件\main">
+      <UniqueIdentifier>{1520b26c-9fae-4895-8bc1-c3413c706011}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\config">
+      <UniqueIdentifier>{37f07303-8f57-496f-a758-23efb3350ce1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\config\bullet_config">
+      <UniqueIdentifier>{1d011f67-cb02-4635-bfe7-a46e116f632c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\config\command">
+      <UniqueIdentifier>{16a6ece4-aac8-42eb-b4f4-37e5f18eecf6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\config\plants_config">
+      <UniqueIdentifier>{de93fd52-30dd-47b9-9d57-3037db9b444a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\config\zombie_config">
+      <UniqueIdentifier>{302acedb-1fdf-4646-b468-be281e209655}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\data">
+      <UniqueIdentifier>{ff8fe86b-806d-4d81-94de-1fb510b59043}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\data\bullet">
+      <UniqueIdentifier>{7c19f2eb-183e-48b4-879f-14306f81d780}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\data\bullet\type">
+      <UniqueIdentifier>{6aef411c-80da-40d6-8396-a73eb4026add}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\data\config">
+      <UniqueIdentifier>{e95020d9-d2f2-492d-af8a-0a933d84d2fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\data\plant">
+      <UniqueIdentifier>{0ecac97c-4144-4d20-ba25-fac1b975d275}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\data\plant\type">
+      <UniqueIdentifier>{d8e9439b-3301-49b1-8fea-0bb2f3ddf687}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\data\zombie">
+      <UniqueIdentifier>{f98245da-cac8-4f21-9437-98fe33b9ef0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\data\zombie\type">
+      <UniqueIdentifier>{ef6d628b-349b-4336-b8f1-5d7bde73ebf1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\resources">
+      <UniqueIdentifier>{25e0c048-13fa-4342-83b9-f32843fb4056}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\resources\bullet">
+      <UniqueIdentifier>{57196ca5-83ee-4871-940e-301834319dc6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\resources\environment">
+      <UniqueIdentifier>{2692ddc2-4839-4020-910b-02753337db28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\resources\plant">
+      <UniqueIdentifier>{6935b79f-a4d0-44d1-a096-24669c3f5d16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\resources\zombie">
+      <UniqueIdentifier>{f79bdf95-ead7-44b4-bcff-2ead11adb811}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\thread">
+      <UniqueIdentifier>{6d43992c-7137-4984-9af3-e41c332b7cfd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\data">
+      <UniqueIdentifier>{ec41034d-68a2-4b4d-a3a2-a5bcdcc69eb5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\data\bullet">
+      <UniqueIdentifier>{ae408dbf-8609-4552-a152-392383e5bf1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\data\bullet\type">
+      <UniqueIdentifier>{f0b7fa48-1537-4fd1-87a5-66ebefbe0071}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\data\config">
+      <UniqueIdentifier>{4d6a8c6d-d522-4027-8060-7a8d021885e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\data\plant">
+      <UniqueIdentifier>{78399565-4b5b-459b-8028-5e16f30cc357}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\data\plant\type">
+      <UniqueIdentifier>{868c27b2-f0cc-4e35-aa49-3861aaa1509b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\data\zombie">
+      <UniqueIdentifier>{917cd7f4-f1bc-4952-9aa1-161cf94fe65e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\data\zombie\type">
+      <UniqueIdentifier>{73db8bc7-8f73-4190-92b5-331f9be3a849}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\resources">
+      <UniqueIdentifier>{09f90dc1-256d-4775-8f63-cbcc145b4df2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\resources\bullet">
+      <UniqueIdentifier>{8c904e07-c881-4c55-b408-030cc0606afc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\resources\environment">
+      <UniqueIdentifier>{409453d3-2766-4419-9cb2-347a24e19baf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\resources\plant">
+      <UniqueIdentifier>{9e2552ca-bee6-46fa-a7db-d0dfd9be177c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\resources\zombie">
+      <UniqueIdentifier>{61e4ae92-dff1-4631-aee5-80aabf5fe122}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\thread">
+      <UniqueIdentifier>{9d2ac486-c9a7-445d-b6ef-095ee4c276b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\database">
+      <UniqueIdentifier>{7106d4a5-9536-402b-b174-e1fc25aa1d77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\database\bullet">
+      <UniqueIdentifier>{4d4d6900-f962-4007-8a4a-c0d82fed9a6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\database\environment">
+      <UniqueIdentifier>{27d40b25-f706-4a1b-88ce-7a50c83db7f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\database\plant">
+      <UniqueIdentifier>{acb718d3-b92d-4aee-9543-9fb78a92bad0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\database\zombie">
+      <UniqueIdentifier>{14df4700-ec18-4ee0-9964-87b63fcb6ad9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\database\bullet\type">
+      <UniqueIdentifier>{aabcede3-7a4e-422a-ac6c-36eeeac6a09f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\database\environment\type">
+      <UniqueIdentifier>{094694e2-6a15-42f5-b48c-c91071377299}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\database\zombie\type">
+      <UniqueIdentifier>{9f9a7dba-f47b-4b4b-a312-818a6279a846}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\database\plant\type">
+      <UniqueIdentifier>{46261e04-8f0d-4a06-a836-c022efc36281}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\database">
+      <UniqueIdentifier>{78ebb77d-d9f6-478d-a8b6-fcf4279620df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\database\data_config">
+      <UniqueIdentifier>{7a4be697-7322-415a-a415-023f3ba27f6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\resources\music">
+      <UniqueIdentifier>{2b09f945-87bc-4250-a81d-fb2e2a47b65f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\main\plant_data">
+      <UniqueIdentifier>{e8822d20-4d8e-4d5c-90c6-02b4c5380f8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\main\plant_rendering">
+      <UniqueIdentifier>{fa041af0-cafc-48af-900b-c9298c66756d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\main\zombie_data">
+      <UniqueIdentifier>{e744760b-2ad7-40c9-8870-d0d5592fe6a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\main\zombie_rendering">
+      <UniqueIdentifier>{273b6c26-4887-4064-858b-3cc016268e91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\main\management">
+      <UniqueIdentifier>{fe8e1e40-9874-4882-aee3-e5115654c30c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\main\gui">
+      <UniqueIdentifier>{cbd208a1-41e6-4165-88fa-5b41d086076f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\management">
+      <UniqueIdentifier>{e9f7f2c3-8c07-453a-a53a-2625d54890d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\management">
+      <UniqueIdentifier>{5140ee4c-e2ac-4992-8941-46a3e88475c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="头文件\main">
+      <UniqueIdentifier>{a884e5d1-aae8-4050-8e4a-9fa3e0fc5a1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\main\gui">
+      <UniqueIdentifier>{1c0e33f3-f54f-46b7-b466-4b2092bcff0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\main\management">
+      <UniqueIdentifier>{15d53679-9545-4368-b90e-06ba68e8dd0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\main\plant_data">
+      <UniqueIdentifier>{9185811b-c8ea-494c-a70c-da37168b1f2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\main\plant_rendering">
+      <UniqueIdentifier>{bd9af218-f781-4469-a2d4-ffacf2f364c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\main\zombie_data">
+      <UniqueIdentifier>{49aa20c7-fd72-4a83-b183-0af26fdc5d32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\main\zombie_rendering">
+      <UniqueIdentifier>{1fd52727-844b-4a2b-a2af-6ad0117b6880}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\database\plant\resources">
+      <UniqueIdentifier>{ca99ab18-e857-4c9e-9a1b-f4db35c4d457}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\database\zombie\resources">
+      <UniqueIdentifier>{f6a72215-5e90-4001-8a09-ade401c1547e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\resources_data">
+      <UniqueIdentifier>{8395905b-faf5-4628-aa31-6db9bcc16956}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\resources_data\bullet">
+      <UniqueIdentifier>{d0339e22-e14a-4eac-b3fa-f409eee32627}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\resources_data\plant">
+      <UniqueIdentifier>{e9b84442-33b9-4057-ab87-2c2f007d090b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\resources_data\zombie">
+      <UniqueIdentifier>{2a0411e3-f57d-485d-9f98-df5baff02876}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\resources_data\environment">
+      <UniqueIdentifier>{333bac45-a72d-4fb9-b5eb-86bd0716362b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\data\environment">
+      <UniqueIdentifier>{48bc1d95-2de6-4512-bdc9-bdb814096f00}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="coordinates.cpp">
+      <Filter>源文件\data\config</Filter>
+    </ClCompile>
+    <ClCompile Include="picture.cpp">
+      <Filter>源文件\data\config</Filter>
+    </ClCompile>
+    <ClCompile Include="thread_data.cpp">
+      <Filter>源文件\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="thread_management.cpp">
+      <Filter>源文件\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="command.cpp">
+      <Filter>源文件\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="bullet_resources_management.cpp">
+      <Filter>源文件\resources\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="environment_management.cpp">
+      <Filter>源文件\resources\environment</Filter>
+    </ClCompile>
+    <ClCompile Include="plant_resources_management.cpp">
+      <Filter>源文件\resources\plant</Filter>
+    </ClCompile>
+    <ClCompile Include="zombie_resources_management.cpp">
+      <Filter>源文件\resources\zombie</Filter>
+    </ClCompile>
+    <ClCompile Include="music.cpp">
+      <Filter>源文件\data\config</Filter>
+    </ClCompile>
+    <ClCompile Include="music_data.cpp">
+      <Filter>源文件\database\data_config</Filter>
+    </ClCompile>
+    <ClCompile Include="IO_operations_management.cpp">
+      <Filter>源文件\management</Filter>
+    </ClCompile>
+    <ClCompile Include="gui_main.cpp">
+      <Filter>源文件\main\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件\main\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="management_main.cpp">
+      <Filter>源文件\main\management</Filter>
+    </ClCompile>
+    <ClCompile Include="zombie_rendering_main.cpp">
+      <Filter>源文件\main\zombie_rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="zombie_data_main.cpp">
+      <Filter>源文件\main\zombie_data</Filter>
+    </ClCompile>
+    <ClCompile Include="plant_rendering_main.cpp">
+      <Filter>源文件\main\plant_rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="plant_data_main.cpp">
+      <Filter>源文件\main\plant_data</Filter>
+    </ClCompile>
+    <ClCompile Include="data\bullet\bullet.cpp">
+      <Filter>源文件\data\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="data\bullet\bullet_resources.cpp">
+      <Filter>源文件\resources\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="data_type\bullet\pea_bullet.cpp">
+      <Filter>源文件\data\bullet\type</Filter>
+    </ClCompile>
+    <ClCompile Include="data_type\bullet\null_bullet.cpp">
+      <Filter>源文件\data\bullet\type</Filter>
+    </ClCompile>
+    <ClCompile Include="data\plant\plant.cpp">
+      <Filter>源文件\data\plant</Filter>
+    </ClCompile>
+    <ClCompile Include="data_type\plant\pea_shooter.cpp">
+      <Filter>源文件\data\plant\type</Filter>
+    </ClCompile>
+    <ClCompile Include="data_type\plant\null_plant.cpp">
+      <Filter>源文件\data\plant\type</Filter>
+    </ClCompile>
+    <ClCompile Include="data\zombie\zombie.cpp">
+      <Filter>源文件\data\zombie</Filter>
+    </ClCompile>
+    <ClCompile Include="data\zombie\zombie_resources.cpp">
+      <Filter>源文件\resources\zombie</Filter>
+    </ClCompile>
+    <ClCompile Include="data_type\zombie\ordinary_zombie.cpp">
+      <Filter>源文件\data\zombie\type</Filter>
+    </ClCompile>
+    <ClCompile Include="data_type\zombie\null_zombie.cpp">
+      <Filter>源文件\data\zombie\type</Filter>
+    </ClCompile>
+    <ClCompile Include="lawn.cpp">
+      <Filter>源文件\data\config</Filter>
+    </ClCompile>
+    <ClCompile Include="plant_data.cpp">
+      <Filter>源文件\data\plant</Filter>
+    </ClCompile>
+    <ClCompile Include="bullet_data.cpp">
+      <Filter>源文件\data\bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="zombie_data.cpp">
+      <Filter>源文件\data\zombie</Filter>
+    </ClCompile>
+    <ClCompile Include="data\plant\plant_resources.cpp">
+      <Filter>源文件\resources\plant</Filter>
+    </ClCompile>
+    <ClCompile Include="data\environment\environment.cpp">
+      <Filter>源文件\resources\environment</Filter>
+    </ClCompile>
+    <ClCompile Include="global_data.cpp">
+      <Filter>源文件\data</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="gui_command.h">
+      <Filter>头文件\config\command</Filter>
+    </ClInclude>
+    <ClInclude Include="management_command.h">
+      <Filter>头文件\config\command</Filter>
+    </ClInclude>
+    <ClInclude Include="plant_data_processing_command.h">
+      <Filter>头文件\config\command</Filter>
+    </ClInclude>
+    <ClInclude Include="plant_rendering_command.h">
+      <Filter>头文件\config\command</Filter>
+    </ClInclude>
+    <ClInclude Include="zombie_rendering_command.h">
+      <Filter>头文件\config\command</Filter>
+    </ClInclude>
+    <ClInclude Include="zombie_data_processing_command.h">
+      <Filter>头文件\config\command</Filter>
+    </ClInclude>
+    <ClInclude Include="coordinates.h">
+      <Filter>头文件\data\config</Filter>
+    </ClInclude>
+    <ClInclude Include="picture.h">
+      <Filter>头文件\data\config</Filter>
+    </ClInclude>
+    <ClInclude Include="bullet_resources_management.h">
+      <Filter>头文件\resources\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="command.h">
+      <Filter>头文件\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="environment.h">
+      <Filter>头文件\resources\environment</Filter>
+    </ClInclude>
+    <ClInclude Include="environment_management.h">
+      <Filter>头文件\resources\environment</Filter>
+    </ClInclude>
+    <ClInclude Include="plant_resources_management.h">
+      <Filter>头文件\resources\plant</Filter>
+    </ClInclude>
+    <ClInclude Include="thread_data.h">
+      <Filter>头文件\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="thread_management.h">
+      <Filter>头文件\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="zombie_resources_management.h">
+      <Filter>头文件\resources\zombie</Filter>
+    </ClInclude>
+    <ClInclude Include="database\bullet\pea_bullet.h">
+      <Filter>头文件\database\bullet\type</Filter>
+    </ClInclude>
+    <ClInclude Include="database\plant\pea_shooter.h">
+      <Filter>头文件\database\plant\type</Filter>
+    </ClInclude>
+    <ClInclude Include="database\zombie\ordinary_zombie.h">
+      <Filter>头文件\database\zombie\type</Filter>
+    </ClInclude>
+    <ClInclude Include="music.h">
+      <Filter>头文件\data\config</Filter>
+    </ClInclude>
+    <ClInclude Include="music_data.h">
+      <Filter>头文件\resources\music</Filter>
+    </ClInclude>
+    <ClInclude Include="IO_operations_management.h">
+      <Filter>头文件\management</Filter>
+    </ClInclude>
+    <ClInclude Include="IO_operations_data.h">
+      <Filter>头文件\management</Filter>
+    </ClInclude>
+    <ClInclude Include="file_data.h">
+      <Filter>头文件\management</Filter>
+    </ClInclude>
+    <ClInclude Include="management_main.h">
+      <Filter>头文件\main\management</Filter>
+    </ClInclude>
+    <ClInclude Include="zombie_rendering_main.h">
+      <Filter>头文件\main\zombie_rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="zombie_data_main.h">
+      <Filter>头文件\main\zombie_data</Filter>
+    </ClInclude>
+    <ClInclude Include="plant_rendering_main.h">
+      <Filter>头文件\main\plant_rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="plant_data_main.h">
+      <Filter>头文件\main\plant_data</Filter>
+    </ClInclude>
+    <ClInclude Include="gui_main.h">
+      <Filter>头文件\main\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="bullet_data.h">
+      <Filter>头文件\data\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="plant_data.h">
+      <Filter>头文件\data\plant</Filter>
+    </ClInclude>
+    <ClInclude Include="zombie_data.h">
+      <Filter>头文件\data\zombie</Filter>
+    </ClInclude>
+    <ClInclude Include="database\zombie\null_zombie.h">
+      <Filter>头文件\database\zombie\type</Filter>
+    </ClInclude>
+    <ClInclude Include="data_type\bullet\null_bullet.h">
+      <Filter>头文件\data\bullet\type</Filter>
+    </ClInclude>
+    <ClInclude Include="data_type\bullet\pea_bullet.h">
+      <Filter>头文件\data\bullet\type</Filter>
+    </ClInclude>
+    <ClInclude Include="data\bullet\bullet_id.h">
+      <Filter>头文件\config\bullet_config</Filter>
+    </ClInclude>
+    <ClInclude Include="data\bullet\bullet_state.h">
+      <Filter>头文件\config\bullet_config</Filter>
+    </ClInclude>
+    <ClInclude Include="data\bullet\bullet_resources.h">
+      <Filter>头文件\resources\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="database\bullet\null_bullet.h">
+      <Filter>头文件\database\bullet\type</Filter>
+    </ClInclude>
+    <ClInclude Include="data_type\plant\pea_shooter.h">
+      <Filter>头文件\data\plant\type</Filter>
+    </ClInclude>
+    <ClInclude Include="data\plant\plant.h">
+      <Filter>头文件\data\plant</Filter>
+    </ClInclude>
+    <ClInclude Include="data\plant\plant_id.h">
+      <Filter>头文件\config\plants_config</Filter>
+    </ClInclude>
+    <ClInclude Include="data\plant\plant_state.h">
+      <Filter>头文件\config\plants_config</Filter>
+    </ClInclude>
+    <ClInclude Include="data\plant\plant_resources.h">
+      <Filter>头文件\resources\plant</Filter>
+    </ClInclude>
+    <ClInclude Include="data_type\plant\null_plant.h">
+      <Filter>头文件\data\plant\type</Filter>
+    </ClInclude>
+    <ClInclude Include="database\plant\null_plant.h">
+      <Filter>头文件\database\plant\type</Filter>
+    </ClInclude>
+    <ClInclude Include="data\zombie\zombie_id.h">
+      <Filter>头文件\config\zombie_config</Filter>
+    </ClInclude>
+    <ClInclude Include="data\zombie\zombie_state.h">
+      <Filter>头文件\config\zombie_config</Filter>
+    </ClInclude>
+    <ClInclude Include="data\zombie\zombie.h">
+      <Filter>头文件\data\zombie</Filter>
+    </ClInclude>
+    <ClInclude Include="data\zombie\zombie_resources.h">
+      <Filter>头文件\resources\zombie</Filter>
+    </ClInclude>
+    <ClInclude Include="data_type\zombie\null_zombie.h">
+      <Filter>头文件\data\zombie\type</Filter>
+    </ClInclude>
+    <ClInclude Include="data_type\zombie\ordinary_zombie.h">
+      <Filter>头文件\data\zombie\type</Filter>
+    </ClInclude>
+    <ClInclude Include="data\bullet\bullet.h">
+      <Filter>头文件\data\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="lawn.h">
+      <Filter>头文件\data\config</Filter>
+    </ClInclude>
+    <ClInclude Include="resources_data\bullet\pea_bullet.h">
+      <Filter>头文件\resources_data\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="resources_data\bullet_set.h">
+      <Filter>头文件\resources_data</Filter>
+    </ClInclude>
+    <ClInclude Include="resources_data\bullet\null_bullet.h">
+      <Filter>头文件\resources_data\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="resources_data\plant_set.h">
+      <Filter>头文件\resources_data</Filter>
+    </ClInclude>
+    <ClInclude Include="resources_data\plant\null_plant.h">
+      <Filter>头文件\resources_data\plant</Filter>
+    </ClInclude>
+    <ClInclude Include="resources_data\plant\pea_shooter.h">
+      <Filter>头文件\resources_data\plant</Filter>
+    </ClInclude>
+    <ClInclude Include="resources_data\zombie\null_zombie.h">
+      <Filter>头文件\resources_data\zombie</Filter>
+    </ClInclude>
+    <ClInclude Include="resources_data\zombie\ordinary_zombie.h">
+      <Filter>头文件\resources_data\zombie</Filter>
+    </ClInclude>
+    <ClInclude Include="resources_data\environment_set.h">
+      <Filter>头文件\resources_data</Filter>
+    </ClInclude>
+    <ClInclude Include="resources_data\zombie_set.h">
+      <Filter>头文件\resources_data</Filter>
+    </ClInclude>
+    <ClInclude Include="data\environment\environment_data.h">
+      <Filter>头文件\data\environment</Filter>
+    </ClInclude>
+    <ClInclude Include="general_purpose_func.h">
+      <Filter>头文件\data\config</Filter>
+    </ClInclude>
+    <ClInclude Include="global_data.h">
+      <Filter>头文件\data</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
